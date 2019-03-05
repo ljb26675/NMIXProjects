@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZuM-Vo-hkb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wif-Px-mtQ">
+                                <rect key="frame" x="0.0" y="70" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp3-e0-nPg">
+                                <rect key="frame" x="172" y="377" width="30" height="30"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <segue destination="P6W-tm-D0k" kind="show" id="Tvg-VY-764"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mp3-e0-nPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="02P-g3-bzG"/>
+                            <constraint firstItem="Wif-Px-mtQ" firstAttribute="centerX" secondItem="Mp3-e0-nPg" secondAttribute="centerX" id="6FS-Td-2qU"/>
+                            <constraint firstItem="Mp3-e0-nPg" firstAttribute="top" secondItem="Wif-Px-mtQ" secondAttribute="bottom" constant="91" id="TSF-Sd-rUf"/>
+                            <constraint firstItem="Wif-Px-mtQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="Uke-iZ-a6H"/>
+                            <constraint firstItem="Wif-Px-mtQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="m0Z-fd-xQy"/>
+                            <constraint firstAttribute="trailing" secondItem="Wif-Px-mtQ" secondAttribute="trailing" id="reI-LV-54Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n97-U0-IqL"/>
+                    <connections>
+                        <outlet property="cityPicker" destination="Wif-Px-mtQ" id="RbR-jC-Ox5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.79999999999995" y="115.59220389805098"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="VML-5w-ADi">
+            <objects>
+                <viewController id="P6W-tm-D0k" customClass="ViewController2" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gsg-qH-BHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJA-Bd-dAX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VJA-Bd-dAX" firstAttribute="leading" secondItem="gsg-qH-BHZ" secondAttribute="leading" id="0ZJ-lV-2bb"/>
+                            <constraint firstItem="VJA-Bd-dAX" firstAttribute="top" secondItem="gsg-qH-BHZ" secondAttribute="top" id="7IL-Af-gcD"/>
+                            <constraint firstAttribute="trailing" secondItem="VJA-Bd-dAX" secondAttribute="trailing" id="WCu-YH-MHg"/>
+                            <constraint firstItem="VJA-Bd-dAX" firstAttribute="bottom" secondItem="qbr-91-9CI" secondAttribute="bottom" id="z7H-1a-3AP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qbr-91-9CI"/>
+                    </view>
+                    <connections>
+                        <outlet property="googleMap" destination="VJA-Bd-dAX" id="tFy-d4-8hA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Rm-Xo-t7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416.8" y="115.59220389805098"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yWm-9F-rFn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZuM-Vo-hkb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wFD-AR-V5w">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Y5C-N5-P3O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aM-iU-FuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.40000000000001" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fj3-eU-E7m">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PictureSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mR4-k8-AC3">
+                                <rect key="frame" x="47" y="64" width="312" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rJO-Zj-KoX">
+                                        <rect key="frame" x="103" y="0.0" width="84" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IA-cK-xBf">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="93"/>
+                                                <state key="normal" title="Button" image="beachThumb"/>
+                                                <connections>
+                                                    <segue destination="mIr-JO-57n" kind="show" identifier="beach" id="ldf-pe-zg4"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="3ef-8Q-zYS">
+                                                <rect key="frame" x="0.0" y="93" width="84" height="102"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj1-Wu-m2h">
+                                                        <rect key="frame" x="0.0" y="0.0" width="84" height="102"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="102" id="Svc-Nf-mSA"/>
+                                                            <constraint firstAttribute="width" constant="84" id="hbU-4Y-M9D"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button" image="bigboyThumb"/>
+                                                        <connections>
+                                                            <segue destination="mIr-JO-57n" kind="show" identifier="big boy" id="opR-uR-cgd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HwE-Wk-wo4">
+                                <rect key="frame" x="0.0" y="265" width="166" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="qDS-vF-qKm">
+                                <rect key="frame" x="120" y="274" width="254" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hut-nL-5IR">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="118"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="166" id="bAW-72-h66"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="butterflyThumb"/>
+                                        <connections>
+                                            <segue destination="mIr-JO-57n" kind="show" identifier="butterfly" id="scJ-os-OaH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQo-sf-jLq">
+                                        <rect key="frame" x="0.0" y="142" width="254" height="150"/>
+                                        <state key="normal" title="Button" image="treeThumb"/>
+                                        <connections>
+                                            <segue destination="mIr-JO-57n" kind="show" identifier="tree" id="RJU-4T-dGB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zt2-uj-qsl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="32.833583208395808"/>
+        </scene>
+        <!--Display Pix-->
+        <scene sceneID="xOu-h2-8OL">
+            <objects>
+                <viewController id="mIr-JO-57n" customClass="displayPix" customModule="PictureSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c4a-Iv-7He">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9Y-k3-Pgo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qGx-m0-3LW"/>
+                    </view>
+                    <connections>
+                        <outlet property="showImage" destination="g9Y-k3-Pgo" id="KCm-04-6xY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEw-Jo-8uS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916" y="32.833583208395808"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Ok-MB-Oro">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fj3-eU-E7m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0CR-Lx-M6Z">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SWL-7G-lNn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCS-Xl-Yvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beachThumb" width="100" height="93"/>
+        <image name="bigboyThumb" width="83" height="100"/>
+        <image name="butterflyThumb" width="200" height="118"/>
+        <image name="treeThumb" width="200" height="150"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="opR-uR-cgd"/>
+    </inferredMetricsTieBreakers>
+</document>

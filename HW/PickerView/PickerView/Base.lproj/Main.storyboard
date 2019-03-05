@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpm-tp-rso">
+                                <rect key="frame" x="126" y="270" width="125" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xTv-3q-dlg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUT-WM-DCS">
+                                <rect key="frame" x="26" y="20" width="324" height="222"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QS5-Bp-wCd">
+                                <rect key="frame" x="1" y="349" width="375" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qpm-tp-rso" firstAttribute="top" secondItem="kUT-WM-DCS" secondAttribute="bottom" constant="28" id="1oZ-Ea-vjI"/>
+                            <constraint firstItem="kUT-WM-DCS" firstAttribute="centerX" secondItem="QS5-Bp-wCd" secondAttribute="centerX" id="2Ai-wL-DSK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QS5-Bp-wCd" secondAttribute="trailing" constant="-17" id="8Gc-7e-bBH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QS5-Bp-wCd" secondAttribute="bottom" constant="102" id="Ky6-0L-spA"/>
+                            <constraint firstItem="kUT-WM-DCS" firstAttribute="centerX" secondItem="Qpm-tp-rso" secondAttribute="centerX" id="Mrc-7g-rEl"/>
+                            <constraint firstItem="Qpm-tp-rso" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="OwN-bk-83v"/>
+                            <constraint firstItem="kUT-WM-DCS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="TRI-Co-n7K"/>
+                            <constraint firstItem="kUT-WM-DCS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dHU-xb-biV"/>
+                            <constraint firstItem="QS5-Bp-wCd" firstAttribute="top" secondItem="Qpm-tp-rso" secondAttribute="bottom" constant="35" id="dY8-Mu-Snd"/>
+                            <constraint firstItem="QS5-Bp-wCd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="grZ-HT-M3s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityImages" destination="kUT-WM-DCS" id="ACo-Pi-uIM"/>
+                        <outlet property="cityPicker" destination="QS5-Bp-wCd" id="F50-c2-7DH"/>
+                        <outlet property="dataFromPicker" destination="Qpm-tp-rso" id="8ww-Oo-A8P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
