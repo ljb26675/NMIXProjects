@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i2d-iX-jPf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kfx-dM-8DS">
+            <objects>
+                <viewController id="i2d-iX-jPf" customClass="ViewController" customModule="BasicMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="apd-Lm-GjU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="adb-t4-Td8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="631"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q9a-KC-WKk">
+                                <rect key="frame" x="82" y="633" width="212" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satelite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapType:" destination="i2d-iX-jPf" eventType="valueChanged" id="spB-Qw-jLJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2dj-wu-7KF">
+                                <rect key="frame" x="28" y="44" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Bike Shops"/>
+                                    <segment title="Repair Stations"/>
+                                    <segment title="Bike Racks"/>
+                                </segments>
+                                <connections>
+                                    <action selector="whichPin:" destination="i2d-iX-jPf" eventType="valueChanged" id="BGu-rU-eKL"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="adb-t4-Td8" secondAttribute="trailing" id="XeO-lG-vju"/>
+                            <constraint firstItem="adb-t4-Td8" firstAttribute="top" secondItem="apd-Lm-GjU" secondAttribute="top" id="rU5-1n-lLe"/>
+                            <constraint firstItem="adb-t4-Td8" firstAttribute="leading" secondItem="apd-Lm-GjU" secondAttribute="leading" id="teO-LY-htV"/>
+                            <constraint firstAttribute="bottom" secondItem="adb-t4-Td8" secondAttribute="bottom" constant="36" id="zkr-Qd-mYJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="maF-RR-hBd"/>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="adb-t4-Td8" id="unB-vH-kKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UdR-7w-fAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.399999999999999" y="-38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
