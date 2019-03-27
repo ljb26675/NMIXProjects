@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47907BEB224C20FA00557966 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47907BEA224C20FA00557966 /* TableViewController.swift */; };
+		47907BEF224C25DD00557966 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47907BED224C25DD00557966 /* iTunesArtwork@1x.png */; };
+		47907BF0224C25DD00557966 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 47907BEE224C25DD00557966 /* Contents.json */; };
 		FAC778F0224A62DC0058899A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC778EF224A62DC0058899A /* AppDelegate.swift */; };
 		FAC778F2224A62DC0058899A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC778F1224A62DC0058899A /* ViewController.swift */; };
 		FAC778F5224A62DC0058899A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC778F3224A62DC0058899A /* Main.storyboard */; };
 		FAC778F7224A62DD0058899A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC778F6224A62DD0058899A /* Assets.xcassets */; };
 		FAC778FA224A62DD0058899A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC778F8224A62DD0058899A /* LaunchScreen.storyboard */; };
-		FAC77902224A6D3C0058899A /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC77901224A6D3C0058899A /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47907BEA224C20FA00557966 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		47907BED224C25DD00557966 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		47907BEE224C25DD00557966 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		FAC778EC224A62DC0058899A /* Midterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC778EF224A62DC0058899A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC778F1224A62DC0058899A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +28,6 @@
 		FAC778F6224A62DD0058899A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC778F9224A62DD0058899A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC778FB224A62DD0058899A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC77901224A6D3C0058899A /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47907BEC224C25DD00557966 /* iTunesArtwork-1.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				47907BED224C25DD00557966 /* iTunesArtwork@1x.png */,
+				47907BEE224C25DD00557966 /* Contents.json */,
+			);
+			name = "iTunesArtwork-1.imageset";
+			path = "Assets.xcassets/iTunesArtwork-1.imageset";
+			sourceTree = "<group>";
+		};
 		FAC778E3224A62DC0058899A = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +76,8 @@
 				FAC778F6224A62DD0058899A /* Assets.xcassets */,
 				FAC778F8224A62DD0058899A /* LaunchScreen.storyboard */,
 				FAC778FB224A62DD0058899A /* Info.plist */,
-				FAC77901224A6D3C0058899A /* ViewController2.swift */,
+				47907BEC224C25DD00557966 /* iTunesArtwork-1.imageset */,
+				47907BEA224C20FA00557966 /* TableViewController.swift */,
 			);
 			path = Midterm;
 			sourceTree = "<group>";
@@ -125,8 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47907BF0224C25DD00557966 /* Contents.json in Resources */,
 				FAC778FA224A62DD0058899A /* LaunchScreen.storyboard in Resources */,
 				FAC778F7224A62DD0058899A /* Assets.xcassets in Resources */,
+				47907BEF224C25DD00557966 /* iTunesArtwork@1x.png in Resources */,
 				FAC778F5224A62DC0058899A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +157,7 @@
 			files = (
 				FAC778F2224A62DC0058899A /* ViewController.swift in Sources */,
 				FAC778F0224A62DC0058899A /* AppDelegate.swift in Sources */,
-				FAC77902224A6D3C0058899A /* ViewController2.swift in Sources */,
+				47907BEB224C20FA00557966 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

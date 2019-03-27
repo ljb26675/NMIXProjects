@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     var dataValues: NSArray = []
     var picValues: NSArray = []
     var candidates = 0
+    
+    var curRow = 0
 
     @IBOutlet var catName: UILabel!
     //@IBOutlet var catAttit: UILabel!
@@ -29,26 +31,26 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData(whichCandidate: candidates)
+        loadData(whichCandidate: curRow)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func prev() {
-        if candidates == 0 {
-            candidates = dataValues.count-1
+        if curRow == 0 {
+            curRow = dataValues.count-1
         }else{
-            candidates-=1
+            curRow-=1
         }
-        loadData(whichCandidate: candidates)
+        loadData(whichCandidate: curRow)
     }
     
     @IBAction func next() {
-        if candidates == dataValues.count-1 {
-            candidates = 0
+        if curRow == dataValues.count-1 {
+            curRow = 0
         } else{
-            candidates+=1
+            curRow+=1
         }
-        loadData(whichCandidate: candidates)
+        loadData(whichCandidate: curRow)
     }
     
     func loadData(whichCandidate: Int){
