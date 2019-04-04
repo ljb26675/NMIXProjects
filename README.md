@@ -1,8 +1,8 @@
 # NMIXProjects
 My portfolio of my work in NMIX classes.
 
-##Projects
+## Projects
 Three projects I have completed.
 
-##HW
+## HW
 My various hw assignments.
