@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CookieClicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 cookies!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4b-3j-3sq">
+                                <rect key="frame" x="20" y="539" width="382" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ORk-ET-cJv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2t8-0Z-c6C">
+                                <rect key="frame" x="20" y="665" width="163" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnD-PD-rSp">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="30"/>
+                                        <state key="normal" title="UPGRADE AUTO TIMER">
+                                            <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="upgradeTimer" destination="BYZ-38-t0r" eventType="touchUpInside" id="HA4-Hg-ERo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-Hd-iBr">
+                                        <rect key="frame" x="0.0" y="40" width="163" height="30"/>
+                                        <state key="normal" title="UPGRADE AUTO CLICK">
+                                            <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="upgradeAuto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jEe-bG-6Hv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF2-Un-9kk">
+                                        <rect key="frame" x="0.0" y="80" width="163" height="30"/>
+                                        <state key="normal" title="UPGRADE CLICKS">
+                                            <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="upgradeClicks" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMR-YQ-zma"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="LKa-Cx-IoA">
+                                <rect key="frame" x="321" y="665" width="18" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8D-eE-6kj">
+                                        <rect key="frame" x="0.0" y="0.0" width="18" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="yEV-EW-Aud"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZM-Xx-b5Z">
+                                        <rect key="frame" x="0.0" y="45" width="18" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-A7-YFC">
+                                        <rect key="frame" x="0.0" y="89" width="18" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BZM-Xx-b5Z" firstAttribute="centerY" secondItem="LKa-Cx-IoA" secondAttribute="centerY" id="svu-KM-JBA"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMA-GB-A6e">
+                                <rect key="frame" x="20" y="102" width="369" height="396"/>
+                                <state key="normal" image="sugar"/>
+                                <connections>
+                                    <action selector="click" destination="BYZ-38-t0r" eventType="touchUpInside" id="G39-a4-yER"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 cookies/sec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-xJ-0EF">
+                                <rect key="frame" x="20" y="569" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ii2-az-b1R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookie Clicker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzv-vc-mlK">
+                                <rect key="frame" x="20" y="56" width="382" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="sqh-nT-9pM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stats: clicks - 1 | autoClicks - 1 | autoTimer - NA " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rA-fJ-UAx">
+                                <rect key="frame" x="20" y="823" width="382" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="iWi-T2-9fZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9rA-fJ-UAx" secondAttribute="bottom" constant="27" id="5Ww-Ty-8zQ"/>
+                            <constraint firstItem="2t8-0Z-c6C" firstAttribute="leading" secondItem="9rA-fJ-UAx" secondAttribute="leading" id="6Mz-Uj-ZjH"/>
+                            <constraint firstItem="YAb-xJ-0EF" firstAttribute="top" secondItem="l4b-3j-3sq" secondAttribute="bottom" constant="9" id="6xE-oO-4NF"/>
+                            <constraint firstItem="kzv-vc-mlK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="BLQ-tW-Y0c"/>
+                            <constraint firstItem="9rA-fJ-UAx" firstAttribute="top" secondItem="2t8-0Z-c6C" secondAttribute="bottom" constant="48" id="Cju-s4-wa6"/>
+                            <constraint firstItem="kzv-vc-mlK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IBV-7w-cQa"/>
+                            <constraint firstItem="l4b-3j-3sq" firstAttribute="leading" secondItem="YAb-xJ-0EF" secondAttribute="leading" id="Kmf-2p-hhu"/>
+                            <constraint firstItem="2t8-0Z-c6C" firstAttribute="bottom" secondItem="LKa-Cx-IoA" secondAttribute="bottom" id="LVN-YS-Y7l"/>
+                            <constraint firstItem="YAb-xJ-0EF" firstAttribute="leading" secondItem="2t8-0Z-c6C" secondAttribute="leading" id="LbY-fJ-zSx"/>
+                            <constraint firstItem="VMA-GB-A6e" firstAttribute="top" secondItem="kzv-vc-mlK" secondAttribute="bottom" constant="8" symbolic="YES" id="M6j-RR-lVJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kzv-vc-mlK" secondAttribute="trailing" constant="12" id="PQ8-Mb-YRe"/>
+                            <constraint firstItem="l4b-3j-3sq" firstAttribute="trailing" secondItem="9rA-fJ-UAx" secondAttribute="trailing" id="Qxp-vA-dca"/>
+                            <constraint firstItem="kzv-vc-mlK" firstAttribute="trailing" secondItem="l4b-3j-3sq" secondAttribute="trailing" id="VdW-o6-Zsv"/>
+                            <constraint firstItem="kzv-vc-mlK" firstAttribute="leading" secondItem="VMA-GB-A6e" secondAttribute="leading" id="cBi-wa-9DU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VMA-GB-A6e" secondAttribute="trailing" constant="25" id="dws-se-Scj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LKa-Cx-IoA" secondAttribute="trailing" constant="75" id="kbH-OM-a63"/>
+                            <constraint firstItem="VMA-GB-A6e" firstAttribute="leading" secondItem="l4b-3j-3sq" secondAttribute="leading" id="pwg-L7-DDo"/>
+                            <constraint firstItem="2t8-0Z-c6C" firstAttribute="top" secondItem="YAb-xJ-0EF" secondAttribute="bottom" constant="75" id="v8Q-bb-Hio"/>
+                            <constraint firstItem="YAb-xJ-0EF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vlp-we-Aai"/>
+                            <constraint firstItem="l4b-3j-3sq" firstAttribute="top" secondItem="VMA-GB-A6e" secondAttribute="bottom" constant="41" id="wXl-NY-XuX"/>
+                            <constraint firstItem="2t8-0Z-c6C" firstAttribute="top" secondItem="LKa-Cx-IoA" secondAttribute="top" id="zOP-bt-xUp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="autoClick" destination="BZM-Xx-b5Z" id="3u4-X8-tdH"/>
+                        <outlet property="autoTimer" destination="K8D-eE-6kj" id="g38-xo-Yta"/>
+                        <outlet property="cookieButton" destination="VMA-GB-A6e" id="8ng-bj-JZJ"/>
+                        <outlet property="cookieSec" destination="YAb-xJ-0EF" id="v55-k2-xmb"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="8Mk-cQ-0HJ"/>
+                        <outlet property="statText" destination="9rA-fJ-UAx" id="3Sv-5D-Ft1"/>
+                        <outlet property="text" destination="l4b-3j-3sq" id="9e8-2W-nzN"/>
+                        <outlet property="userClick" destination="ZqE-A7-YFC" id="o1B-Wo-wbB"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Bfr-67-n16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sugar" width="700" height="700"/>
+    </resources>
+</document>
